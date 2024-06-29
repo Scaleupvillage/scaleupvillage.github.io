@@ -23,10 +23,10 @@
             </button>
             <div class="collapse navbar-collapse nav-list-itmes" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Services</a>
-                    <a class="nav-link" aria-disabled="true">Contact</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
 
     <section id="about" class="container-fluid about-container">
         <div class="row">
-            <div class="col-12 col-md-6 about-col-one">
+            <div class="col-12 col-md-6 order-2 order-md-1 about-col-one">
                 <div class="row">
                     <h3>About</h3>
                     <p>Welcome to Scaleup Village, a public limited ​company based in Perinthalmanna. We are ​dedicated
@@ -72,7 +72,7 @@
                         individual talents to thrive ​and scale new heights.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-6 about-col-two">
+            <div class="col-12 col-md-6 order-1 order-md-2 about-col-two">
                 <h2 class="h2-text">Empowering ​Innovation and ​Growth</h2>
                 <div class="row about-img">
                     <img src="images/img2.png" alt="about image">
@@ -83,8 +83,8 @@
 
     <section id="services" class="container-fluid services-container">
         <div class="row">
-            <div class="col-12 col-md-6 services-img-col">
-                <img src="images/img3.svg" alt="services image">
+            <div class="col-12 col-md-6 services-img-col mb-5">
+                <img src="images/img3.svg" alt="services image" class="p-3">
             </div>
             <div class="col-12 col-md-6 services-text-col">
                 <h2 class="h2-text">What We Do</h2>
@@ -108,7 +108,7 @@
                         <img src="images/img4.jpg" class="card-img-top" alt="image">
                     </div>
                     <div class="card-body">
-                        <h3 class="card-title">Startup Accelerato</h3>
+                        <h3 class="card-title">Startup Accelerator</h3>
                         <p>Highlight a specific service or product. It can be a property appraisal service, a
                             consultation, or something uniquely yours. Give it room to shine here.</p>
                     </div>
@@ -391,6 +391,12 @@
     </footer>
 
 
+    <script>
+        $('.navbar-nav a').on('click', function () {
+            $('.navbar-nav').find('a.active').removeClass('active');
+            $(this).parent('a').addClass('active');
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

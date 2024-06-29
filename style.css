@@ -68,9 +68,8 @@
 }
 
 .about-img img{
-    width: 60%;
+    width: 70%;
     margin-top: 50px;
-    padding-top: 50px;
 }
 .about-img {
     justify-content: center;
@@ -90,6 +89,7 @@ h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    order: initial;
 }
 
 .about-container p, .services-text-col{
@@ -235,6 +235,11 @@ iframe{
 
 
 @media only screen and (max-width: 768px) {
+
+    .home-container{
+        margin-top: 30px;
+    }
+
     .home-container, section {
         padding: 10px !important;
     }
