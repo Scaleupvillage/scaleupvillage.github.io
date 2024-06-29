@@ -137,7 +137,7 @@ h3{
 }
 
 .review-list-row {
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .review-card{
@@ -156,7 +156,6 @@ h3{
 }
 
 .list-card{
-    max-width: 30% !important;
     display: flex;
     align-items: center;
     border: 2px solid #133e6d !important;
@@ -199,13 +198,12 @@ h3{
 }
 
 .team-card-row{
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .team-card{
     border: 0px !important;
     border-radius: 0px !important;
-    width: 20% !important;
     align-items: center;
     background-color: #F5F7F8 !important;
     font-size: 15px;
@@ -215,11 +213,10 @@ h3{
 .team-card-img{
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
+
 }
 
 .team-card-img img{
-    position: relative;
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -235,3 +232,22 @@ h3{
 iframe{
     height: 100%;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .home-container, section {
+        padding: 10px !important;
+    }
+    
+    iframe{
+        width: 100%;
+    }
+    .h2-text{
+        font-size: 30px;
+    }
+
+    .home-container img{
+        padding: 15px;
+    }
+
+  }
