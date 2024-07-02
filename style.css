@@ -8,6 +8,10 @@ section div {
     color: #133e6d;
 }
 
+.navbar-brand{
+    color: #133e6d !important;
+    font-weight: 600 !important;
+}
 
 .nav-container {
     position: fixed;
