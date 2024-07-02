@@ -8,7 +8,7 @@ section div {
     color: #133e6d;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: #133e6d !important;
     font-weight: 600 !important;
 }
@@ -24,6 +24,12 @@ section div {
 .nav-list-itmes {
     font-weight: 600;
     justify-content: flex-end;
+}
+
+.nav-list-itmes button {
+    background-color: #133e6d;
+    color: #F5F7F8;
+    border-radius: 5px;
 }
 
 .nav-link {
@@ -87,7 +93,7 @@ h3 {
     font-size: 48px !important;
 }
 
-.about-col-one{
+.about-col-one {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,7 +124,7 @@ h3 {
     box-sizing: border-box;
 }
 
-.services-text-col .row{
+.services-text-col .row {
     padding: .75rem !important;
 
 }
@@ -290,6 +296,114 @@ iframe {
     width: 100%;
 }
 
+
+
+.btn {
+    display: block;
+    padding: 0.7em 1em;
+    background: transparent;
+    outline: none;
+    border: 0;
+    color: #133e6d;
+    letter-spacing: 0.1em;
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.cube {
+    position: relative;
+    transition: all 0.5s;
+}
+
+.cube .bg-top {
+    position: absolute;
+    height: 10px;
+    background: #F5F7F8;
+    bottom: 100%;
+    left: 5px;
+    right: -5px;
+    transform: skew(-45deg, 0);
+    margin: 0;
+    transition: all 0.4s;
+}
+
+.cube .bg-top .bg-inner {
+    bottom: 0;
+}
+
+.cube .bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background: #133e6d;
+    transition: all 0.4s;
+}
+
+.cube .bg-right {
+    position: absolute;
+    background: #133e6d;
+    top: -5px;
+    z-index: 0;
+    bottom: 5px;
+    width: 10px;
+    left: 100%;
+    transform: skew(0, -45deg);
+    transition: all 0.4s;
+}
+
+.cube .bg-right .bg-inner {
+    left: 0;
+}
+
+.cube .bg-inner {
+    background: #F5F7F8;
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+}
+
+.cube .text {
+    color: #133e6d;
+    background: #F5F7F8;
+    position: relative;
+    transition: all 0.4s;
+}
+
+
+.cube:hover .bg-inner {
+    background: #133e6d;
+    transition: all 0.4s;
+}
+
+.cube:hover .text {
+    background: #133e6d;
+    color: #F5F7F8;
+    transition: all 0.4s;
+}
+
+.cube:hover .bg-right,
+.cube:hover .bg,
+.cube:hover .bg-top {
+    background: #F5F7F8;
+}
+
+.cube:active {
+    z-index: 9999;
+    animation: bounce 0.1s linear;
+}
+
+@keyframes bounce {
+    50% {
+        transform: scale(0.9);
+    }
+}
 
 
 
