@@ -129,6 +129,10 @@ h3 {
 
 }
 
+.scaleupconcl{
+    color: #f05d63 !important;
+}
+
 .services-img-col {
     display: flex;
     justify-content: center;
