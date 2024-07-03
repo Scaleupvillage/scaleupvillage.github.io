@@ -16,7 +16,7 @@ section div {
 .nav-container {
     position: fixed;
     top: 2px;
-    height: 50px;
+    height: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.071);
     z-index: 1;
 }
@@ -314,6 +314,10 @@ iframe {
     width: 100%;
 }
 
+.env-future{
+    font-size: x-small;
+    display: block;
+}
 
 
 .btn {
